@@ -62,6 +62,21 @@ def registroRegistro():
 # registroRegistro()
 
 
+# --- Consulta um por um utilizando WITH --- 
+from contextlib import closing
+def umAum():
+    with sqlite3.connect("agenda.db") as conn:
+        with closing(conn.cursor()) as cursor:
+            cursor.execute('select * from agenda')
+
+            while True:
+                result = cursor.fetchone()
+                if result == None:
+                    break
+                print(f'Nome: {result[0]}\nTelefone: {result[1]}')
+
+
+# >>> É HORA DO EXERCÍCIO <<<
 
 # --- FINALIZANDO CONEXÃO ---
 conn.commit()
