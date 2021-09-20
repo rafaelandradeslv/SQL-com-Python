@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("agenda.db")
+conn = sqlite3.connect("cap_1_conceitos_básicos/agenda.db")
 cursor = conn.cursor()
 
 

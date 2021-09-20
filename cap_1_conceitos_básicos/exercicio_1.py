@@ -6,7 +6,7 @@ from contextlib import closing
 # deve conter o nome do produto e seu respectivo preço. O programa também deve
 # inserir alguns dados para teste
 
-conn = sqlite3.connect("precos.db")
+conn = sqlite3.connect("cap_1_conceitos_básicos/precos.db")
 cursor = conn.cursor()
 
 
@@ -23,7 +23,7 @@ def criandoTabela():
 
 def insertDados():
     cursor.execute(
-        'insert into precos(nome_do_produto, preco) values(?,?)', ('Feijão', '6.99'))
+        'insert into precos(nome_do_produto, preco) values(?,?)', ('Óleo', '10.17'))
 # insertDados()
 
 
