@@ -1,7 +1,6 @@
 import sqlite3
 from contextlib import closing
 
-
 # -- atualizando dados (update) --
 def atualizandoDados():
     with sqlite3.connect('cap_1_conceitos_básicos/agenda.db') as conn:
@@ -17,7 +16,6 @@ def atualizandoDados():
 
 # ATENÇÃO: quando a query utilizando update não utiliza where, todos os valores
 # da coluna selecionada serão alteradas.
-
 
 # -- Verificando quantos valores foram alterados --
 with sqlite3.connect('cap_1_conceitos_básicos/agenda.db') as conn:

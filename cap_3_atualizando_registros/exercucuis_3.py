@@ -41,3 +41,5 @@ def atualizandoPreco():
 
 
 atualizandoPreco()
+
+
